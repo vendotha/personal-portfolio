@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": "post-1755797426331",
+      "content": "📱 One day, my grandfather bought a smartphone…\r\n…but he didn’t know how to use Google Maps, WhatsApp, or make online payments.\r\nI was there to guide him — step by step. But it made me think:\r\n👉 What about those who don’t have someone to help them?\r\nMany elderly people struggle with digital tools that are second nature to us.\r\nThat’s when the idea struck. 💡\r\nI built Digital Literacy Companion – a Django-based platform designed for senior citizens, to help them navigate the digital world confidently.\r\n🌟 What it offers:\r\n✅ Step-by-step video tutorials on essential apps\r\n✅ Support for multiple Indian languages\r\n✅ Voice command navigation for accessibility\r\n✅ Font resizing for better readability\r\n✅ An AI-powered chatbot (Gemini 1.5 Flash) that answers their questions in simple terms\r\nWhether it's learning to send a WhatsApp message, booking a ride, or understanding digital payments — this companion is designed with empathy and simplicity.\r\n👴👵 This project is close to my heart, and I hope it helps many others like my grandfather embrace technology without fear.\r\n🔗 Check it out: https://lnkd.in/gfn5s7Ji\r\nLet’s build tech that includes everyone. ❤️\r\nhashtag#DigitalLiteracy hashtag#Accessibility hashtag#AIForGood hashtag#Django hashtag#OpenSource hashtag#TechForSe",
+      "media": [
+        {
+          "type": "image",
+          "url": "/uploads/posts-media/1755797426329-1750266107535.jpeg"
+        }
+      ],
+      "stats": {
+        "likes": 0,
+        "comments": 0,
+        "reposts": 0
+      },
+      "createdAt": "2025-08-21T17:30:26.331Z"
+    }
+  ]
+}

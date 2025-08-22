@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": "seed-1",
+      "author": {
+        "name": "Bhuvan Vendotha",
+        "headline": "CS Student | Web Dev & AI",
+        "avatarUrl": "/static/profile.jpg"
+      },
+      "content": "Kicked off my portfolio revamp \ud83d\ude80 \u2014 now powered by a custom backend for posts & resume upload.",
+      "media": [],
+      "stats": {
+        "likes": 14,
+        "comments": 3,
+        "reposts": 1
+      },
+      "createdAt": "2025-08-20T12:00:00.000Z"
+    }
+  ]
+}

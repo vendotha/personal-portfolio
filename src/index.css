@@ -2,47 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Dark Portfolio Theme - all colors in HSL so they render the same everywhere */
+/* Light Portfolio Theme - all colors in HSL so they render the same everywhere */
 
 @layer base {
   :root {
     /* Background & text */
-    --background: 222 47% 11%;   /* dark slate */
-    --foreground: 210 40% 96%;   /* almost white text */
+    --background: 0 0% 100%;      /* pure white */
+    --foreground: 222 47% 11%;    /* dark slate text */
 
     /* Cards & surfaces */
-    --card: 222 47% 15%;         /* slightly lighter than background */
-    --card-foreground: 210 40% 96%;
+    --card: 0 0% 100%;            /* white cards */
+    --card-foreground: 222 47% 11%;
 
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Primary - electric blue */
-    --primary: 217 91% 60%;
+    /* Primary - professional deep blue */
+    --primary: 221 83% 53%;       /* Tailwind blue-600 */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    --primary-glow: 221 83% 65%;
 
-    /* Secondary - muted gray */
-    --secondary: 222 14% 25%;
-    --secondary-foreground: 210 40% 96%;
+    /* Secondary - soft gray */
+    --secondary: 220 14% 96%;     /* slate-100 */
+    --secondary-foreground: 222 47% 11%;
 
     /* Muted / subtle text */
-    --muted: 222 14% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 46%; /* slate-500 */
 
-    /* Accent - purple */
-    --accent: 266 76% 47%;
+    /* Accent - tech violet */
+    --accent: 266 77% 55%;        /* violet-600 */
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 266 76% 65%;
+    --accent-glow: 266 77% 70%;
 
     /* Destructive - red */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & inputs */
-    --border: 222 14% 20%;
-    --input: 222 14% 25%;
-    --ring: 217 91% 60%;
+    --border: 220 14% 90%;        /* slate-200 */
+    --input: 220 14% 94%;         /* slate-100 */
+    --ring: 221 83% 53%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
@@ -62,14 +62,14 @@
     --radius: 0.75rem;
 
     /* Sidebar (optional) */
-    --sidebar-background: 222 47% 9%;
-    --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 222 14% 20%;
-    --sidebar-accent-foreground: 210 40% 96%;
-    --sidebar-border: 222 14% 20%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 14% 90%;
+    --sidebar-ring: 221 83% 53%;
   }
 }
 

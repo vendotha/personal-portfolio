@@ -4,7 +4,6 @@ import { Progress } from "@/components/ui/progress";
 import { 
   Code, 
   Brain, 
-  Database, 
   Globe, 
   Smartphone, 
   Zap,
@@ -147,7 +146,10 @@ const Skills = () => {
         </Card>
 
         {/* Learning Goals */}
-        <Card className="mt-8 bg-gradient-subtle border-primary/20 animate-slide-up" style={{ backgroundColor: "#dd0ff00" }}>
+        <Card 
+          className="mt-8 border-primary/20 animate-slide-up" 
+          style={{ backgroundColor: "#d0ff00" }} // Neon background
+        >
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <GitBranch className="h-5 w-5 text-primary" />

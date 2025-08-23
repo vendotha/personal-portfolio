@@ -82,7 +82,7 @@ const Resume = () => {
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: "#d0ff00" }}>
+    <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
@@ -94,15 +94,15 @@ const Resume = () => {
         </div>
 
         {/* Download Section */}
-        <Card className="mb-12 bg-white border-0 shadow-glow animate-scale-in">
+        <Card className="mb-12 bg-gradient-primary text-primary-foreground border-0 shadow-glow animate-scale-in">
           <CardContent className="p-8 text-center">
             <div className="flex flex-col items-center gap-4">
-              <div className="p-4 bg-gray-100 rounded-full">
-                <FileText className="h-8 w-8 text-gray-700" />
+              <div className="p-4 bg-white/20 rounded-full">
+                <FileText className="h-8 w-8" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Download My Resume</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary-foreground/80 mb-4">
                   Get the complete PDF version of my resume with detailed information
                 </p>
               </div>
@@ -110,7 +110,7 @@ const Resume = () => {
                 size="lg" 
                 variant="secondary"
                 onClick={handleDownload}
-                className="bg-gray-800 hover:bg-gray-900 text-white border-gray-300"
+                className="bg-white/20 hover:bg-white/30 text-white border-white/30"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download PDF Resume
@@ -122,7 +122,7 @@ const Resume = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Education */}
-          <Card className="lg:col-span-2 animate-slide-up bg-white">
+          <Card className="lg:col-span-2 animate-slide-up">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-gradient-accent">
@@ -170,7 +170,7 @@ const Resume = () => {
           </Card>
 
           {/* Achievements */}
-          <Card className="animate-slide-up delay-200 bg-white">
+          <Card className="animate-slide-up delay-200">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-gradient-primary">
@@ -195,7 +195,7 @@ const Resume = () => {
           </Card>
 
           {/* Experience */}
-          <Card className="lg:col-span-3 animate-fade-in delay-400 bg-white">
+          <Card className="lg:col-span-3 animate-fade-in delay-400">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-gradient-accent">

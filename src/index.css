@@ -9,8 +9,8 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Professional Portfolio Design System */
-    --background: 248 250 252; /* slate-50 */
-    --foreground: 226 29% 17%; /* slate-800 */
+    --background: 210 40% 98%; /* slate-50 */
+    --foreground: 222 47% 11%; /* slate-800 */
 
     --card: 255 255 255; /* white */
     --card-foreground: 226 29% 17%;
@@ -122,6 +122,6 @@ All colors MUST be HSL.
 
   body {
     
-    background-color: #ffffff !important;
+    @apply bg-background text-foreground;
   }
 }

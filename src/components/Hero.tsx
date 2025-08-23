@@ -28,7 +28,8 @@ const Hero = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <Card className="max-w-5xl mx-auto bg-card/95 backdrop-blur-sm shadow-elegant border-0">
+          <Card className="max-w-5xl mx-auto bg-card text-card-foreground backdrop-blur-sm shadow-elegant border-0">
+
             <div className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Profile Image */}

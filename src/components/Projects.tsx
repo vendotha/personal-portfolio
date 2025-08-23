@@ -131,13 +131,13 @@ const Projects = () => {
   };
 
   return (
-    <section className="p-6 rounded-lg shadow-md" style={{ backgroundColor: "#d0ff00" }}>
+    <section className="py-20" style={{ backgroundColor: "#d0ff00" }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <p className="text-lg text-gray-800 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A showcase of my latest work in web development, AI, and software engineering
           </p>
         </div>
@@ -147,7 +147,7 @@ const Projects = () => {
             {dummyProjects.map((repo, index) => (
               <Card
                 key={repo.id}
-                className="group hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-border/50 animate-scale-in"
+                className="group hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50 animate-scale-in"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="pb-3">
@@ -238,7 +238,7 @@ const Projects = () => {
             ))}
           </div>
         ) : (
-          <p className="text-center text-gray-800">No projects available.</p>
+          <p className="text-center text-gray-400">No projects available.</p>
         )}
 
         <div className="text-center mt-12">

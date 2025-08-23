@@ -2,36 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light Portfolio Theme - with subtle card contrast */
+/* Light Portfolio Theme - balanced contrast */
 
 @layer base {
   :root {
     /* Background & text */
-    --background: 0 0% 100%;       /* pure white page background */
-    --foreground: 222 47% 11%;     /* dark slate text */
+    --background: 0 0% 100%;        /* pure white page background */
+    --foreground: 222 47% 11%;      /* dark slate text */
 
     /* Cards & surfaces */
-    --card: 0 0% 98%;              /* off-white cards (slightly gray) */
+    --card: 0 0% 97%;               /* light gray cards for contrast */
     --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
     /* Primary - professional deep blue */
-    --primary: 221 83% 53%;        /* Tailwind blue-600 */
+    --primary: 221 83% 53%;         /* Tailwind blue-600 */
     --primary-foreground: 0 0% 100%;
     --primary-glow: 221 83% 65%;
 
     /* Secondary - soft gray */
-    --secondary: 220 14% 96%;      /* slate-100 */
+    --secondary: 220 14% 96%;       /* slate-100 */
     --secondary-foreground: 222 47% 11%;
 
     /* Muted / subtle text */
-    --muted: 220 14% 96%;
+    --muted: 220 14% 97%;           /* softer background tone */
     --muted-foreground: 215 16% 46%; /* slate-500 */
 
     /* Accent - tech violet */
-    --accent: 266 77% 55%;         /* violet-600 */
+    --accent: 266 77% 55%;          /* violet-600 */
     --accent-foreground: 0 0% 100%;
     --accent-glow: 266 77% 70%;
 
@@ -40,8 +40,8 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & inputs */
-    --border: 220 14% 90%;         /* slate-200 */
-    --input: 220 14% 94%;          /* slate-100 */
+    --border: 220 14% 90%;          /* slate-200 */
+    --input: 220 14% 94%;           /* slate-100 */
     --ring: 221 83% 53%;
 
     /* Gradients */
@@ -86,6 +86,11 @@
   .bg-card {
     background-color: hsl(var(--card)) !important;
     color: hsl(var(--card-foreground));
-    box-shadow: var(--shadow-card); /* makes cards pop */
+    box-shadow: var(--shadow-card); /* subtle shadow for depth */
+  }
+
+  /* Fix yellow issue (override if present) */
+  section {
+    background-color: hsl(var(--background)) !important;
   }
 }

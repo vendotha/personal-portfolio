@@ -87,7 +87,7 @@ const Contact = () => {
     <section 
       id="contact"
       className="py-20"
-      style={{ backgroundColor: "#fffff2" }} // ✅ Neon yellow applied here
+      style={{ backgroundColor: "#ccff00" }} // ✅ Neon yellow applied here
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in">

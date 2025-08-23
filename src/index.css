@@ -2,46 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light Portfolio Theme - balanced contrast */
-
 @layer base {
   :root {
     /* Background & text */
-    --background: 0 0% 100%;        /* pure white page background */
-    --foreground: 222 47% 11%;      /* dark slate text */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
     /* Cards & surfaces */
-    --card: 0 0% 97%;               /* light gray cards for contrast */
+    --card: 0 0% 97%;
     --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - professional deep blue */
-    --primary: 221 83% 53%;         /* Tailwind blue-600 */
+    /* Primary */
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 221 83% 65%;
 
-    /* Secondary - soft gray */
-    --secondary: 220 14% 96%;       /* slate-100 */
+    /* Secondary */
+    --secondary: 220 14% 96%;
     --secondary-foreground: 222 47% 11%;
 
-    /* Muted / subtle text */
-    --muted: 220 14% 97%;           /* softer background tone */
-    --muted-foreground: 215 16% 46%; /* slate-500 */
+    /* Muted */
+    --muted: 220 14% 97%;
+    --muted-foreground: 215 16% 46%;
 
-    /* Accent - tech violet */
-    --accent: 266 77% 55%;          /* violet-600 */
+    /* Accent */
+    --accent: 266 77% 55%;
     --accent-foreground: 0 0% 100%;
     --accent-glow: 266 77% 70%;
 
-    /* Destructive - red */
+    /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & inputs */
-    --border: 220 14% 90%;          /* slate-200 */
-    --input: 220 14% 94%;           /* slate-100 */
+    --border: 220 14% 90%;
+    --input: 220 14% 94%;
     --ring: 221 83% 53%;
 
     /* Gradients */
@@ -60,16 +58,6 @@
     --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.75rem;
-
-    /* Sidebar (optional) */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 221 83% 53%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 96%;
-    --sidebar-accent-foreground: 222 47% 11%;
-    --sidebar-border: 220 14% 90%;
-    --sidebar-ring: 221 83% 53%;
   }
 }
 
@@ -82,15 +70,18 @@
     @apply bg-background text-foreground;
   }
 
-  /* Ensure card backgrounds are solid */
+  /* Card styles */
   .bg-card {
     background-color: hsl(var(--card)) !important;
     color: hsl(var(--card-foreground));
-    box-shadow: var(--shadow-card); /* subtle shadow for depth */
+    box-shadow: var(--shadow-card);
   }
 
-  /* Fix yellow issue (override if present) */
-  section {
-    background-color: hsl(var(--background)) !important;
+  /* Section-specific backgrounds */
+  #projects,
+  #currently-learning,
+  #resume,
+  #contact {
+    background-color: #ffff00 !important; /* neon yellow */
   }
 }

@@ -84,7 +84,11 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section 
+      id="contact"
+      className="py-20"
+      style={{ backgroundColor: "#fffff2" }} // ✅ Neon yellow applied here
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
